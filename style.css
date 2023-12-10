@@ -1,188 +1,68 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Nunito', sans-serif ;
-    font-size: 16px;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    color:#fff ;
-    font-weight: 200;
-    
-}
-
-.bg {
-    background: url(pantera\ negra.b.png) no-repeat center center/cover ;
-    height: 100vh;
-    width: 100vw;
-}
-
-img {
-    max-width: 100%;
-}
-
-.player {
-    width: 402px;
-    height: 608px;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin: 10px 0 0 0;
-    box-shadow: 3px 3px 50px rgba(0,0 ,0,0.5 ) , -3px -3px 50px rgba(0,0 ,0,0.5 ) ;
-    
 
 }
 
-.container {
-    width: 90%;
-    margin:auto;
-    overflow: hidden;
-
+nav{
+    background-color: rgb(248, 37, 231);
 }
 
-.top-icons {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+nav li{
+    display: inline-block;
 }
 
-.top-icons a{
-    color: white;
-    font-size: 1.3em;
-}
-
-.top-icons a:hover {
-    color: #b9b6b6;
-    transition: all 0.2s ease-in-out;
-}
-
-.img {
-    border-top: 3px solid #fff;
-    border-radius: 50%;
-}
-
-.img img{
-    margin: 50px 0 0 55px;
-    width: 70%;
-    border-radius: 50%;
-    transition: all 0,4s  ease-in-out;
-    cursor: pointer;
-}
-
-.img img:hover {
-    box-shadow: 3px 3px 50px rgba(0,0 ,0,0.5 ) , 3px 3px 50px rgba(0,0 ,0,0.5 ) ;
-}
-
-.text {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.text h1{
-    font-size: 1,4em ;
-}
-
-.time {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0 0 0;
-}
-
-.time a{
-    color: #fff;
-    font-size: 1,1em;
+nav li a {
+    display: inline-block;
+    color: aliceblue;
     text-decoration: none;
-    font-weight: bold;
+    padding: 15px;
 }
-
-.seek{
-    width:100% ;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.3);
-    margin: 5px 0;
-    position: relative;
-
-}
-
-.fill {
-    width: 0%;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.7);
+nav li a:hover{
+    background-color: black;
 
 }
 
 
-
-.btns {
-    margin: 40px 0;
-    text-align: center;
+.fotos{
+    position: absolute;
+    box-shadow: 0 0 2px ;
+    background-color:rgb(248, 37, 231);
+    display: none;
+}
+.fotos a{
+    display: block;
+    color: aliceblue;
+}
+.imagem:hover .fotos{
+    display: block ;
 }
 
-.btns a{
-    color: #fff;
-    font-size: 1.3em;
-    margin: 0 10px;
-    transition: all 0.3s ease-in-out;
+.grid-container{
+    background-color: blue;
+    width: 1068px;
+    height: 1500px;
+    display: flex;
+border: 0px;
 }
-
-.btns a:hover {
-    color: #b9b6b6;
-}
-
-.btns a:nth-child(1) , .btns a:nth-child(5) {
-    opacity: 0.6;
-}
-
-.btns a:nth-child(1):hover , .btns a:nth-child(5):hover {
-    opacity: 1;
-    color: #fff;
-}
-
-.btns .fa-pause{
-    border:2px solid #fff ;
-    padding: 20px 22px;
-    border-radius: 50%;
-}
-
-.btns .fa-play{
-    border:2px solid #fff ;
-    padding: 20px 22px;
-    border-radius: 50%;
-}
-
-
-button{
-    
-    font-size: 1.1em;
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    background: chartreuse;
-    border: none;
-    width: 100%;
-    
-    height: 25px;
-    border-radius: 15px;
-    cursor: pointer;
+.grid-item img{
+    width: 450px;
+    height: 650px;
+   
     
 }
 
-button:hover{
-
-    background-color: #4B0082;
-    color: white;
-
-
+.lado img{
+    height: 320px;
+    width: 200px;
+ 
+  
+  
 }
-
-/*#02a0a5
+.lado{
+   
+  
+ padding: 5px;
+ align-items: end;
+}
